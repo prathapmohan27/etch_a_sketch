@@ -1,0 +1,54 @@
+ html{
+     min-height: 100%;
+ }
+ body{
+     height: 100%;
+     background-image: linear-gradient(#e66465, #9198e5);;
+ }
+ 
+ /*------------grid container-------------*/
+ 
+ #main{
+    height: 600px;
+    width: 600px;
+    display: grid;
+    border: 1px solid black;
+    background: blanchedalmond;
+    margin: 0 auto;
+}
+.row{
+
+  display: grid;
+}
+
+.box{
+   
+    border: 1px solid black;
+    transition: all 0.5s ease
+}
+
+
+/*-------------etch a sketch-------------------*/
+
+#heading{
+    text-align: center;
+}
+#heading h1{
+    font-size: 3em;
+}
+
+/*----change size button-----------*/
+
+#buttons{
+    text-align: center;
+    margin: 50px;
+}
+#buttons #change-size{
+    font-size: 1em;
+    padding: 7px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: black;
+    color: cornsilk;
+    cursor: pointer;
+}
