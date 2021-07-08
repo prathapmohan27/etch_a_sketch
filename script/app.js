@@ -40,17 +40,19 @@ function makeGrid(defaultValue){
 
 function changeSize(){ 
     var newSize=prompt("Enter New Size 1 to 100");
+    if(newSize!==null){
     newSize=parseInt(newSize);
-    if(Number.isNaN(newSize)){
-      return;
-    }
-   else if(100<newSize||newSize<1){
+    if(newSize>100||1>newSize||Number.isNaN(newSize)){
         alert("Enter the valid number");
-       changeSize();
+        changeSize();
     }
     else{
-        clear()
+        clear();
         makeGrid(newSize);
+    }
+}
+    else{
+       return;
     }  
     
 }
